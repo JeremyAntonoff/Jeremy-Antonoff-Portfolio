@@ -34,6 +34,8 @@ a:hover {
   font-size: 2.7em
 }
 
+
+
 .icons {
   height: 50px;
   width: 50px;
@@ -249,7 +251,7 @@ a:hover {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 
   #aboutBox {
     margin-top: 30px;
@@ -264,8 +266,46 @@ a:hover {
     font-size: 15px;
   }
 
-  #aboutContent p {
+  #about #aboutContent p {
     font-size: 1em;
+  }
+
+  #work #projects {
+    justify-content: center;
+  }
+
+  #projects .project {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #about {
+    padding-top: 30px;
+  }
+
+  #aboutBox {
+    margin: 0px auto;
+    padding-top: 0px;
+    top: 0px;
+  }
+
+  #aboutBox p {
+    font-size: 1em;
+  }
+  #about #work-button {
+    display: none;
+  }
+  #projects .project {
+    width: 90%;
+  }
+  .project .project-content {
+    height: auto;
+  }
+
+  #contact #contact-form {
+    width: 70%;
   }
 }
 
@@ -348,7 +388,7 @@ a:hover {
 }
 
 .project-content {
-  height: 170px;
+  height: 200px;
   font-size: 1.2em;
   color: grey;
   padding: 5px 10px 5px 10px;
