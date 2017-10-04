@@ -278,8 +278,10 @@ a:hover {
   font-size: 1.1em;
 }
 .techIcons {
+  margin-left: 15px;
   height: 50px;
   width: 50px;
+
 }
 
 #work {
@@ -398,10 +400,11 @@ a:hover {
 }
 
 .tooltip:hover:after{
+  text-align: center;
     background: #FFF;
     border-radius: 5px;
     top: 22px;
-    left: -5px;
+    left: -15px;
     color: #000;
     font-weight: 600;
     content: attr(data-tooltip);
@@ -409,5 +412,6 @@ a:hover {
     position: absolute;
     opacity: 0.8;
     z-index: 98;
-    width: 59px;
+    width: 80px;
+    border: 1px solid black;
 }
