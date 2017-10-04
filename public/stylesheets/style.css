@@ -254,9 +254,21 @@ a:hover {
 @media (max-width: 1200px) {
 
   #aboutBox {
-    margin-top: 30px;
+    padding-top: 30px;
     width: 90%;
   }
+  #work-button {
+    display: none;
+  }
+
+  #topHeader h1 {
+    font-size: 4em
+  }
+
+  #topHeader h2 {
+    font-size: 2em;
+  }
+
   #aboutIMG {
     margin-top: 10px;
     width: 50%
@@ -277,9 +289,22 @@ a:hover {
   #projects .project {
     width: 45%;
   }
+
+  .project .project-content {
+    height: 245px;
+  }
 }
 
 @media (max-width: 600px) {
+  #topHeader {
+    padding-top: 120px;
+  }
+  #topHeader h1 {
+    font-size: 3em
+  }
+  #topHeader h2 {
+    font-size: 1.7em;
+  }
 
   #about {
     padding-top: 30px;
@@ -294,9 +319,14 @@ a:hover {
   #aboutBox p {
     font-size: 1em;
   }
+
+  body #work {
+    margin-top: 25px;
+  }
   #about #work-button {
     display: none;
   }
+
   #projects .project {
     width: 90%;
   }
@@ -420,7 +450,7 @@ a:hover {
   padding-top: 50px;
   min-height: 100vh;
   height: 100%;
-  background: #112135
+  background: #112135;
 }
 
 #form-button {
