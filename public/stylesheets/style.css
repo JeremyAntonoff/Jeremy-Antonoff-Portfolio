@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Strait', sans-serif;
   margin: 0px;
   height: 100%;
   padding: 0px;
@@ -26,9 +26,11 @@ a:hover {
   color: white;
 }
 #topHeader h1 {
+  font-family: 'Imprima', sans-serif;
   font-size: 6em
 }
 #topHeader h2 {
+  font-family: 'Imprima', sans-serif;
   font-size: 2.7em
 }
 
@@ -70,19 +72,24 @@ a:hover {
 }
 
 #contact-form {
-  margin: 35px auto 0px auto;
+  margin: 35px auto 35px auto;
   height: auto;
   padding: 5px 25px 48px 25px;
-  border-radius: 25px;
+  border-radius: 12px;
   background: #f7f7f7;
   width: calc(80% - 15px);
   max-width: 1000px;
   color: black;
+  border: 3px solid black;
   -webkit-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
 }
 
+#footer {
+  text-align: center;
+  color: white;
+}
 #contact-details {
   color: #919191;
   text-align: center;
@@ -268,10 +275,20 @@ box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
 @media (max-width: 1200px) {
 
   #aboutBox {
+    top: 25px;
     padding-top: 30px;
     width: 90%;
   }
 
+  #work-button {
+    top: 0px;
+  }
+  #aboutContent {
+    width: 80%;
+  }
+  #about #aboutContent p {
+    font-size: 1em
+  }
 
 
   #topHeader h1 {
@@ -357,6 +374,10 @@ box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
   #contact #contact-form {
     width: 70%;
   }
+
+  #footer {
+    font-size: 0.9em;
+  }
 }
 
 #aboutContent h1 {
@@ -385,6 +406,7 @@ box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
 }
 
 .project-heading {
+  font-family: sans-serif;
   width: 300px;
   text-align: center;
   margin: 0px auto;
@@ -401,6 +423,7 @@ box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
   max-width: 1300px;
   padding: 10px;
   margin: 25px auto;
+  border-radius: 12px;
   border: 5px solid #4fb6d2
 }
 
