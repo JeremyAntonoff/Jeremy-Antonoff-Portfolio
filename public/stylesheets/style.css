@@ -127,6 +127,29 @@ a:hover {
   color: #919191;
 }
 
+
+
+.form-message{
+  display: none;
+  text-align: center;
+  color: #83c4a1;
+  border-bottom: 1px solid black;
+}
+
+.contact-failed {
+  text-align: center;
+  border-bottom: 1px solid black;
+  color: #842323;
+}
+
+.emailLink {
+  color: #19527a;
+}
+
+.emailLink:hover {
+  color: #5b93ba;
+}
+
 #textbox {
   background: #f7f7f7;
   border: 2px solid #4fb6d2;
@@ -417,7 +440,7 @@ a:hover {
 }
 
 #projects {
-  
+
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
