@@ -182,20 +182,21 @@
     <section id = "contact">
       <h1 class = "project-heading">CONTACT</h1>
         <div id ="contact-area">
-          <form id="contact-form" action="/contact" method="POST">
-          <div id="contact-details">
-            <h1>Contact me via email or phone:</h1>
-            <img src="/img/email.png"><h3>jeremyantonoff@gmail.com</h3>
-            <img src="/img/phone.png"><h3>407-536-8618</h3>
-            <h1>Or fill out this form:</h1>
-          </div>
+          <form id="contact-form">
+            <div id="contact-details">
+              <h1>Contact me via email or phone:</h1>
+              <img src="/img/email.png"><h3>jeremyantonoff@gmail.com</h3>
+              <img src="/img/phone.png"><h3>407-536-8618</h3>
+              <h1>Or fill out this form:</h1>
+            </div>
             <label class="label" for="name">Name:</label>
             <input class="form" id="name" type="text" name="name">
             <label class="label" for="email">Email:</label>
             <input class="form" id="email" type="text" name="email">
             <label class="label" for="textbox">Message:</label>
-            <textarea id="textbox"></textarea>
+            <textarea id="textbox" name="message"></textarea>
             <button id="form-button" type="submit">SUBMIT</button>
+            <h1 class="form-message"></h1>
           </form>
         </div>
         <a href = "#topHeader" class="scroll"><div id = "work-button">
