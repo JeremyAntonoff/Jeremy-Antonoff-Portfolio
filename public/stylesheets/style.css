@@ -67,7 +67,7 @@ a:hover {
 #contact {
   padding-top: 50px;
   height: auto;
-  background: #112135;
+  background: #4f4c43;
   border-bottom: 5px solid white;
 }
 
@@ -106,6 +106,8 @@ a:hover {
 }
 
 .form {
+  padding: 20px 5px 5px 3px;
+
   background: #f7f7f7;
   height: 20px;
   line-height: 20px;
@@ -151,6 +153,8 @@ a:hover {
 }
 
 #textbox {
+  padding: 10px 0px 10px 10px;;
+  font-size: 16px;
   background: #f7f7f7;
   border: 2px solid #4fb6d2;
   display: block;
@@ -215,7 +219,7 @@ a:hover {
   }
 }
 #about {
-  background: url('../img/aboutIMG3.png');
+  background: url('../img/aboutIMG.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
