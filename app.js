@@ -4,7 +4,6 @@ const bodyParser = require('body-parser')
 
 
 app.set('view engine', 'ejs')
-app.use(express.static(__dirname + "/public"))
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function(req, res) {
@@ -18,9 +17,8 @@ app.post("/contact", function(req, res){
       port: 465,
       secure: true,
       auth: {
-          user: process.env.mailerUSERNAME,
-          pass: process.env.mailerPASS
-      }
+          user: process.env.mailerUSERPORT,
+          pass: process.env.mailerPASSPORT
   });
 
   let mailOptions = {
@@ -41,6 +39,6 @@ app.post("/contact", function(req, res){
   });
 });
 
-app.listen(3000, function() {
+app.listen(8081, function() {
   console.log('Server has started');
 });
