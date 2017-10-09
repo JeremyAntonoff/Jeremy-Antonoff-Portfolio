@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+require('dotenv').config()
 const bodyParser = require('body-parser')
 
 
 app.set('view engine', 'ejs')
+app.use(express.static(__dirname + "/public"))
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function(req, res) {
@@ -13,17 +15,16 @@ app.get("/", function(req, res) {
 app.post("/contact", function(req, res){
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      service: 'Gmail',
       auth: {
           user: process.env.mailerUSERPORT,
           pass: process.env.mailerPASSPORT
+      }
   });
 
   let mailOptions = {
       from: req.body.name,
-      to: 'jeremyantonoff@gmail.com',
+      to: process.env.email,
       subject: 'New Message from Portfolio!',
       html: '<h2>' + req.body.name + '<br></h2><h2>' + req.body.email + '<br></h2><p>' + req.body.message  + '</p>'
   };
