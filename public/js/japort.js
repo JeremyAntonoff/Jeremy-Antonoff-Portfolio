@@ -12,9 +12,9 @@ $('#contact-form').submit(function(event) {
 })
 
 function formSubmit() {
-  let name = $('name').val();
+  let name = $('#name').val();
   let email =$('#email').val();
-  let message = $('#text-box').val();
+  let message = $('#textbox').val();
   let formMessage = {name: name, email: email, message: message};
   $.ajax({
     type: "POST",
