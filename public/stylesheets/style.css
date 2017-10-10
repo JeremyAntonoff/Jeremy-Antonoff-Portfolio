@@ -286,7 +286,7 @@ a:hover {
   width: 63%;
 }
 
-#aboutContent h1 {
+#aboutContent h2 {
   border-bottom: 3px solid #4fb6d2;
 }
 
@@ -511,6 +511,13 @@ a:hover {
 @media (max-width: 600px) {
   .project .project-content {
     height: auto;
+  }
+
+  .techIcons {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
   }
 
   #topHeader {
