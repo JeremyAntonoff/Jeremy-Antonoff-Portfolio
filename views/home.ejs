@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Jeremy Antonoff | Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?" />
-    <link href="https://fonts.googleapis.com/css?family=Imprima|Strait" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Imprima%7CStrait" rel="stylesheet">
     <link rel = "stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
@@ -16,15 +16,15 @@
       <a href="https://github.com/JeremyAntonoff" class="tooltip" data-tooltip="GitHub"><img class = "icons" src = "/img/icons/github.PNG" alt="GitHub"></a>
       <a href="https://www.linkedin.com/in/JeremyAntonoff" class="tooltip" data-tooltip="LinkedIn"><img class = "icons" src = "/img/icons/linkedin.PNG" alt="Linked In"></a>
       <a href="#" class="tooltip" data-tooltip="Resume"><img class = "icons" src = "/img/icons/resume.PNG" alt="Resume"></a>
-      <a href = "#about" class="scroll"><img id = "arrow" src = "/img/arrow.PNG"></a>
+      <a href = "#about" class="scroll"><img id = "arrow" src = "/img/arrow.PNG" alt="down arrow"></a>
     </header>
     <section id = "about">
       <div id = "aboutBox">
         <div id="aboutIMG">
-          <img src="/img/me.JPG">
+          <img src="/img/me.JPG" alt="picture of Jeremy Antonoff">
         </div>
         <div id = "aboutContent">
-          <h1>ABOUT ME</h1>
+          <h2>ABOUT ME</h2>
           <p>Hey Everyone! My name is <strong>Jeremy Antonoff</strong> and I currently reside in sunny(mostly rainy) <strong>Florida</strong>!
           Ever since I was a child growing up in Marietta, GA I was passionate about two things, theme parks and technology.
           Being in Florida, I get my fair share of theme parks but what about technology?
@@ -32,7 +32,7 @@
           Through my work, you can see I'm well versed in many things including <strong>Javascript, APIS, and jquery</strong>. I'm also comfortable and excited
           to use back end technologies such as <strong>Node, Express, and MONGODB</strong>. The list of things I learn grows everyday and thats what I love most about development.
           Outside of coding, I love to travel, play ping pong, go to theme parks, visit different comedy clubs, and try out different cuisines!</p>
-          <h1 id = "technology">TECHNOLOGIES</h1>
+          <h2 id = "technology">TECHNOLOGIES</h2>
           <span class="tooltip" data-tooltip="HTML5"><img class = "techIcons" src = "/img/icons/html.SVG" alt="HTML5"></span>
           <span class="tooltip" data-tooltip="CSS3"><img class = "techIcons" src = "/img/icons/css3.SVG" alt="CSS3"></span>
           <span class="tooltip" data-tooltip="JavaScript"><img class = "techIcons" src = "/img/icons/js.JPG" alt="Javascript"></span>
@@ -179,19 +179,19 @@
         <div id ="contact-area">
           <form id="contact-form">
             <div id="contact-details">
-              <h1>Contact me via email or phone:</h1>
+              <h2>Contact me via email or phone:</h2>
               <img src="/img/icons/email.PNG" alt="Email Icon"><h3>jeremyantonoff@gmail.com</h3>
               <img src="/img/icons/phone.PNG" alt="Phone Icon"><h3>407-536-8618</h3>
-              <h1>Or fill out this form:</h1>
+              <h2>Or fill out this form:</h2>
             </div>
             <label class="label" for="name">Name:</label>
-            <input class="form" id="name" type="text" name="name">
+            <input class="form" id="name" type="text" name="name" required>
             <label class="label" for="email">Email:</label>
-            <input class="form" id="email" type="text" name="email">
+            <input class="form" id="email" type="email" name="email" required>
             <label class="label" for="textbox">Message:</label>
-            <textarea id="textbox" name="message"></textarea>
+            <textarea id="textbox" name="message" required></textarea>
             <button id="form-button" type="submit">SUBMIT</button>
-            <h1 class="form-message"></h1>
+            <h2 class="form-message">message</h2>
           </form>
         </div>
         <a href = "#topHeader" class="scroll">
@@ -200,7 +200,7 @@
         </div></a>
     </section>
     <footer id="footer">
-      <h4>This portfolio will always be a work in progress. Check out the repo @ <a href="https://github.com/JeremyAntonoff/Jeremy-Antonoff-Portfolio">GitHub</a>
+      <h4>This portfolio will always be a work in progress. Check out the repo @ <a href="https://github.com/JeremyAntonoff/Jeremy-Antonoff-Portfolio">GitHub</a></h4>
     </footer>
     <script src="/js/libs/jquery.js"></script>
     <script src="/js/japort.js"></script>
