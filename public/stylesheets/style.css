@@ -575,6 +575,7 @@ p {
 @media (max-width: 600px) {
   .project .project-content {
     height: auto;
+    padding-bottom: 20px;
   }
 
   .techIcons {
