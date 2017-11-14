@@ -1,14 +1,13 @@
-
 body {
   font-family: 'Strait', sans-serif;
   margin: 0px;
   height: 100%;
   padding: 0px;
-  background: #2f526c;
+  background: #0f0f0f;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -19,6 +18,9 @@ a {
 a:hover {
   color: white;
 }
+p {
+  margin: 0px;
+}
 
 .icons {
   height: 50px;
@@ -26,14 +28,14 @@ a:hover {
   padding: 15px;
   color: white;
   opacity: 1;
-  transition: opacity  1s;
+  transition: opacity 1s;
 }
 
 .icons:hover {
   opacity: 0.5;
-  -webkit-box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.75);
-  box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 4px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 26px 0px rgba(0, 0, 0, 0.75);
 }
 
 .techIcons {
@@ -42,26 +44,34 @@ a:hover {
   width: 50px;
 }
 
+.techIcons:hover {
+  opacity: 0.7;
+}
+
 .tooltip {
   position: relative;
   display: inline;
 }
 
-.tooltip:hover:after{
+.tooltip:hover:after {
   text-align: center;
-    background: #FFF;
-    border-radius: 5px;
-    top: 22px;
-    left: -15px;
-    color: #000;
-    font-weight: 600;
-    content: attr(data-tooltip);
-    padding: 5px 15px;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 98;
-    width: 80px;
-    border: 1px solid black;
+  background: #fff;
+  border-radius: 5px;
+  top: 22px;
+  left: -15px;
+  color: #000;
+  font-weight: 600;
+  content: attr(data-tooltip);
+  padding: 5px 15px;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 98;
+  width: 80px;
+  border: 1px solid black;
+}
+
+.proj-tooltip:hover:after {
+  top: 55px;
 }
 
 .navigate-button {
@@ -77,9 +87,9 @@ a:hover {
   opacity: 0.9;
   border: 3px solid #4fb6d2;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
-  box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
   transition: background 0.6s;
 }
 
@@ -91,41 +101,42 @@ a:hover {
 }
 
 .project-heading {
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   width: 300px;
   text-align: center;
   margin: 0px auto;
-  font-size: 3.5em;
+  font-size: 2.8em;
+  font-weight: 300;
   padding: 10px;
   color: white;
   border-bottom: 5px solid #4fb6d2;
 }
 
 .project {
-  position: relative;
+  display: flex;
+  flex-flow: column wrap;
   box-sizing: border-box;
   border-radius: 15px;
-  margin: 12px;
+  margin: 20px 0px;
   padding-bottom: 25px;
   height: auto;
-  width: 31%;
+  width: 31.5%;
   background: white;
-  -webkit-box-shadow: 1px 14px 46px -7px rgba(0,0,0,1);
-  -moz-box-shadow: 1px 14px 46px -7px rgba(0,0,0,1);
-  box-shadow: 1px 14px 46px -7px rgba(0,0,0,1);
+  -webkit-box-shadow: 1px 14px 46px -7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 1px 14px 46px -7px rgba(0, 0, 0, 1);
+  box-shadow: 1px 14px 46px -7px rgba(0, 0, 0, 1);
   bottom: 0px;
   transition: bottom 0.2s, box-shadow 0.2s;
-
 }
 
 .project:hover {
-  background: #e76873;
+  background: #317693;
   opacity: 1;
   position: relative;
   bottom: 5px;
-  -webkit-box-shadow: 5px 21px 76px -7px rgba(0,0,0,1);
-  -moz-box-shadow: 5px 21px 76px -7pxrgba(0,0,0,1);
-  box-shadow: 5px 15px 52px -4px rgba(0,0,0,1);
+  -webkit-box-shadow: 5px 21px 76px -7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 21px 76px -7pxrgba(0, 0, 0, 1);
+  box-shadow: 5px 15px 52px -4px rgba(0, 0, 0, 1);
 }
 
 .project:hover .project-content {
@@ -143,7 +154,7 @@ a:hover {
 
 .project-content {
   height: 200px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: grey;
   padding: 0px 10px 5px 10px;
 }
@@ -152,9 +163,11 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 5px 0px ;
+  margin-top: auto;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-top: 5px;
+  line-height: 25px;
 }
 
 .project-icons img {
@@ -162,12 +175,17 @@ a:hover {
   height: 50px;
 }
 
-.project-buttons  {
+.project-buttons {
   display: flex;
   font-size: 1.3em;
   padding-top: 25px;
   justify-content: space-around;
   font-weight: 800;
+}
+
+.hidden {
+  width: 31.5%;
+  height: 0px;
 }
 
 .form {
@@ -188,7 +206,7 @@ a:hover {
   outline: none;
 }
 
-.form-message{
+.form-message {
   display: none;
   text-align: center;
   color: #83c4a1;
@@ -202,6 +220,7 @@ a:hover {
 }
 
 .emailLink {
+  font-size: 1em;
   color: #19527a;
 }
 
@@ -210,7 +229,8 @@ a:hover {
 }
 
 #topHeader {
-  background: #112135;
+  background: url(../img/space.svg);
+  background-size: cover;
   line-height: 25px;
   text-align: center;
   padding-top: 10%;
@@ -220,16 +240,18 @@ a:hover {
 }
 
 #topHeader h1 {
-  font-family: 'Imprima', sans-serif;
-  font-size: 6em
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 6em;
 }
 
 #topHeader h2 {
-  font-family: 'Imprima', sans-serif;
-  font-size: 2.7em
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 2.7em;
 }
 
-#arrow  {
+#arrow {
   display: block;
   margin: 0 auto;
   width: 50px;
@@ -245,6 +267,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: -20px;
   min-height: 700px;
   width: 100%;
   padding-top: 100px;
@@ -261,16 +284,15 @@ a:hover {
   height: auto;
   opacity: 0.9;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
-  box-shadow: 3px 10px 37px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 10px 37px 0px rgba(0, 0, 0, 0.75);
 }
 
 #aboutIMG {
   padding-top: 15px;
   width: 32%;
 }
-
 
 #aboutIMG img {
   margin: 4px;
@@ -301,29 +323,37 @@ a:hover {
   padding-bottom: 30px;
   height: auto;
   width: 100%;
-  background: #2f526c;
-  border-bottom: 7px solid white
+  background: #0f0f0f;
+  border-bottom: 7px solid white;
 }
 
 #projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  background: url('../img/project_background.PNG');
+  background-repeat: repeat;
   max-width: 1300px;
-  padding: 10px;
+  padding: 20px;
   margin: 25px auto;
   border-radius: 12px;
-  border: 5px solid #4fb6d2
+  border: 5px solid black;
+  -webkit-box-shadow: inset -1px 2px 16px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px 2px 16px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px 2px 16px 5px rgba(0, 0, 0, 0.75);
 }
 
 #contact {
   padding-top: 20px;
   height: auto;
-  background: #4f4c43;
+  background: #2b2b2b;
   border-bottom: 5px solid white;
 }
 
 #contact-details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   color: #919191;
   text-align: center;
 }
@@ -337,6 +367,8 @@ a:hover {
 
 #contact-details h3 {
   display: inline;
+  font-weight: 300;
+  color: #545454;
 }
 
 #contact-form {
@@ -349,20 +381,36 @@ a:hover {
   max-width: 1000px;
   color: black;
   border: 3px solid black;
-  -webkit-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
-  box-shadow: 3px 3px 36px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 3px 36px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 36px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 36px -1px rgba(0, 0, 0, 0.75);
+}
+
+#contact-form h2 {
+  text-align: center;
+}
+
+#contact-form img {
+  margin: 0px 10px;
+}
+#contact-details a {
+  font-size: 1.2em;
+  color: #545454;
+  font-weight: 300;
+}
+#contact-details a:hover {
+  color: #4fb6d2;
 }
 
 #contact-form .label {
   padding-left: 2px;
-  color: #919191;
+  font-weight: bold;
 }
 
 #textbox {
   background: #f7f7f7;
-  padding: 10px 0px 10px 10px;;
-  font-size: 16px;
+  padding: 10px 0px 10px 10px;
+  font-size: 20px;
   font-family: 'Strait', sans-serif;
   border: 2px solid #4fb6d2;
   display: block;
@@ -402,15 +450,26 @@ a:hover {
   color: white;
 }
 
+#footer a {
+  color: #4fb6d2;
+}
+
+#footer a:hover {
+  color: #a5e9fb;
+}
+
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-20px);
     transform: translateY(-20px);
-
   }
   60% {
     -moz-transform: translateY(-10px);
@@ -418,7 +477,11 @@ a:hover {
   }
 }
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -432,12 +495,15 @@ a:hover {
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
-
   }
   40% {
     -moz-transform: translateY(40px);
@@ -454,7 +520,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1100px) {
   .project .project-content {
     height: 245px;
   }
@@ -464,7 +530,7 @@ a:hover {
   }
 
   #topHeader h1 {
-    font-size: 4em
+    font-size: 4em;
   }
 
   #topHeader h2 {
@@ -490,22 +556,20 @@ a:hover {
     border-radius: 5px;
   }
 
-
   #aboutContent {
     width: 800%;
   }
   #about #aboutContent p {
-    font-size: 1em
+    font-size: 1em;
   }
 
   #work #projects {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   #projects .project {
-    width: 45%;
+    width: 48%;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -520,13 +584,17 @@ a:hover {
     width: 40px;
   }
 
+  .emailLink {
+    font-size: 0.5em;
+  }
+
   #topHeader {
     padding-top: 120px;
     padding-bottom: 375px;
   }
 
   #topHeader h1 {
-    font-size: 3em
+    font-size: 3em;
   }
 
   #topHeader h2 {
@@ -534,7 +602,7 @@ a:hover {
   }
 
   #about {
-  padding-top: 25px;
+    padding-top: 25px;
   }
 
   #aboutBox {
@@ -574,12 +642,21 @@ a:hover {
     display: none;
   }
 
+  #work #projects {
+    justify-content: center;
+  }
+
   #projects .project {
     width: 90%;
   }
 
   #contact #contact-form {
     width: 70%;
+  }
+
+  #contact-details a,
+  h3 {
+    font-size: 13.9px;
   }
 
   #footer {
